@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- Source : Meta viewport : https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta -->
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1, width=device-width, minimal-ui=1">
+        
+        <script src="../phaser/phaser.js"></script>
+        <script src="./src/Demarrage.js"></script>
+        <script src="./src/Chargement.js"></script>
+        <script src="./src/Menu.js"></script>
+        <script src="./src/Jouer.js"></script>
+        <script src="./src/gagnant.js"></script>
+        <script src="./src/Perdant.js"></script>
+        
+        
+        <script src="./src/gyro.min.js"></script>
+      
+        <script src="./src/jeu.js"></script>
+        
+        <style>
+            body{
+                margin: 0;
+            }
+            #jeu{
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            .msgRotation
+            {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .msgRotation p{
+                font-size: 2em;
+                text-align: center;
+            }
+            .cacher{
+                display: none;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <!--<h1>Phaser - Démo cours 7 - Ajustement écran</h1>-->
+        <section class="msgRotation cacher">
+            <p>Changer l'orientation</p>
+            <img src="assets/orientation.png">
+        </section>
+        <main id="jeu"></main>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
